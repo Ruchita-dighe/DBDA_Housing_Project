@@ -33,11 +33,11 @@ graph TD
 ## 📊 Market Dashboards
 
 ### 1) Market Analysis
-*KPIs: Avg Living Area & Avg Price*
+*KPIs: Avg Living Area, Avg Price, Price per SqFt & Property Count*
 ![Market Analysis Dashboard](Deployment/tableau1.png)
 
 ### 2) Property Characteristics
-*KPIs: Price per SqFt & Property Count*
+*KPIs:Avg Living Area & Avg Price*
 ![Property Characteristics Dashboard](Deployment/tableau2.png)
 
 ## 🌐 Web App Deployment
@@ -68,3 +68,11 @@ graph TD
 │   └── 📂 Deployment/                           
 └── 📄 Project_Report_House_Price.docx           
 ```
+## 💡 Key Insights
+- **Model Efficacy**: Random Forest achieved an outstanding **~99% R²** on the standard 1-2 lakh dataset, making it the most reliable model for medium-sized data.
+- **Big Data Scalability**: The pipeline proved highly scalable, with Gradient Boosting via PySpark maintaining an **~89% R² score** even when the dataset size was increased 10x to 1 million records.
+- **Feature Importance**: Living Area is the most significant predictor of price, with clear positive correlations highlighted in the Tableau dashboards.
+- **Geospatial Trends**: Geospatial mapping reveals high concentrations of premium properties in specific coastal and metropolitan regions, with significant variances in Price per SqFt across different states.
+
+## 🏁 Conclusion
+This project successfully demonstrated a complete end-to-end Machine Learning lifecycle for real estate valuation. By automating data ingestion via web scraping, rigorously testing various regression algorithms, and successfully scaling the solution with PySpark for Big Data processing, the pipeline provides robust, real-time pricing estimates. Furthermore, the integration of Tableau dashboards and a Streamlit web app ensures that both technical and non-technical stakeholders (investors, homebuyers) can interactively explore the data and derive actionable insights.
