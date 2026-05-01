@@ -1,6 +1,6 @@
 # 🏡 DBDA Housing Price Prediction
 
-![Project Architecture](Project_FlowChart.png)
+![Project Architecture]
 
 ## 📌 Fast Facts
 - **Goal**: Predict residential real estate prices.
